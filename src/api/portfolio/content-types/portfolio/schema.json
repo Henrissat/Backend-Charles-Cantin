@@ -41,6 +41,12 @@
       "type": "media",
       "multiple": false,
       "required": true
+    },
+    "filtre_cats": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::categorie.categorie",
+      "inversedBy": "portfolios"
     }
   }
 }
